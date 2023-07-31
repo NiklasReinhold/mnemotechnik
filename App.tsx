@@ -27,24 +27,26 @@ export default function App() {
         onPress={() => Linking.openURL(link)}>
         <Text style={{padding: 8}}>Globus-Merksystem</Text>
       </TouchableOpacity>
-      <View style={{width: min*1.01, height: min, left: -12}}> 
+      <View style={{width: min*1.01, height: min}}> 
         <object type="image/svg+xml" aria-label="globus" data={globus.toString()}></object>
       </View>
-      <FlatList
-        style={{position: 'absolute', width: min, height: min, marginTop: 40}}
-        data={countries.flat()}
-        renderItem={({item}) => (
-          <View style={{width: elementSize, height: elementSize, justifyContent: 'center', borderWidth: 1}}>
-            <Text style={{textAlign: 'center', color: '#990000ff', fontWeight: 'bold', 
-              textShadowColor: 'white',
-              fontSize: 12,
-              textShadowOffset: {width: -1, height: 1},
-              textShadowRadius: 0}}>{item}</Text>
-          </View>
-        )}
-        keyExtractor={(item, index) => index.toString()}
-        numColumns={8}
-      />
+      <View style={{width: min, height: min, position: 'absolute', marginTop: 40,}}>
+        <FlatList
+          style={{ left: 12}}
+          data={countries.flat()}
+          renderItem={({item}) => (
+            <View style={{width: elementSize, height: elementSize, justifyContent: 'center', borderWidth: 1}}>
+              <Text style={{textAlign: 'center', color: '#990000ff', fontWeight: 'bold', 
+                textShadowColor: 'white',
+                fontSize: 12,
+                textShadowOffset: {width: -1, height: 1},
+                textShadowRadius: 0}}>{item}</Text>
+            </View>
+          )}
+          keyExtractor={(item, index) => index.toString()}
+          numColumns={8}
+        />
+      </View>
     </View>
   );
 }
