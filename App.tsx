@@ -6,6 +6,7 @@ import globus from "./assets/globus.svg";
 export default function App() {
   var dimensions = Dimensions.get('window');
   var min = Math.min(dimensions.width, dimensions.height);
+  var elementSize = min*0.965/8;
 
   var countries =  [
     ["Alaska", "Nordpol", "Island", "Norwegen", "Schweden", "Finland", "Dresden", "Regensburg"],
@@ -24,16 +25,14 @@ export default function App() {
       <TouchableOpacity style={{position: 'absolute', left: 8, top: 8, backgroundColor: '#990000b0', borderRadius: 8}}>
         <Text style={{padding: 8}}>Globus-Merksystem</Text>
       </TouchableOpacity>
-      <View style={{width: min, height: min, }}> 
-        <View style={{backgroundColor: '#00ff00b0'}}>
-          <object type="image/svg+xml" aria-label="globus" data={globus.toString()}></object>
-        </View>
+      <View style={{width: min*1.01, height: min, left: -12}}> 
+        <object type="image/svg+xml" aria-label="globus" data={globus.toString()}></object>
       </View>
       <FlatList
-        style={{position: 'absolute', width: min, height: min,}}
+        style={{position: 'absolute', width: min, height: min, marginTop: 40}}
         data={countries.flat()}
         renderItem={({item}) => (
-          <View style={{width: min/8, height: min/8, justifyContent: 'center', borderWidth: 1}}>
+          <View style={{width: elementSize, height: elementSize, justifyContent: 'center', borderWidth: 1}}>
             <Text style={{textAlign: 'center'}}>{item}</Text>
           </View>
         )}
