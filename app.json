@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "mnemotechnik2",
-    "slug": "mnemotechnik2",
+    "name": "mnemotechnik",
+    "slug": "mnemotechnik",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
