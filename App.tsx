@@ -9,14 +9,14 @@ export default function App() {
   var elementSize = min*0.965/8;
 
   var countries =  [
-    ["Alaska", "Nordpol", "Island", "Norwegen", "Schweden", "Finland", "Dresden", "Regensburg"],
-    ["Kanada", "Grönland", "England", "West-Deutschland", "Ost-Deutschland", "Polen", "Chemnitz", "Bayern"],
+    ["Alaska", "Nordpol", "Island", "Norwegen", "Schweden", "Estland", "Monaco", "Regensburg"],
+    ["Kanada", "Grönland", "England", "West-Deutschland", "Ost-Deutschland", "Polen", "Dubai", "Bayern"],
     ["Wilder Westen", "USA-Oststaaten", "Frankreich", "Schweiz", "Österreich", "Rumänien", "Russland", "Sibirien"],
     ["Panama", "Kuba", "Spanien", "Italien", "Griechenland", "Türkei", "China", "Japan"],
     ["Galapagos Inseln", "Brasilien", "Atlantik", "Mittelmeer", "Israel", "Iran", "Indien", "Indochina"],
     ["Chile", "Argentinien", "Kanarische Inseln", "Sahara", "Ägypten", "Saudi-Arabien", "Indonesien", "Hawaii"],
     ["Feuerland", "Falkland-Inseln", "St. Helena", "Urwald", "Savanne", "Seychellen", "Neu-Guinea", "Osterinsel"],
-    ["Weltall", "Sonne", "Eismeer", "Antarktis", "Südafrika", "Madagaskar", "Australien", "Neuseeland"]
+    ["Weltall", "Sonne", "Eismeer", "Antarktis", "Capetown", "Madagaskar", "Australien", "Neuseeland"]
   ]
   //http://www.p-roesler.de/memory.html#Globus-Merksystem
 
